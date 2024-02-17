@@ -1,0 +1,8 @@
+type Query {
+    getUser(id: ID!): User
+    searchUsers: [User]
+}
+
+type Mutation {
+    createUser(user: UserInput): User
+}

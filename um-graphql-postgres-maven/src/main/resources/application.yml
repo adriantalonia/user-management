@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: user-management-graphql
+  datasource:
+    url: jdbc:postgresql://${IP_DATABASE:localhost}:${DATABASE_PORT:5432}/${DATABASE_NAME:um-db}
+    username: ${POSTGRES_USER:postgres}
+    password: ${POSTGRES_PASSWORD:postgres}
+
+  graphql:
+    graphiql:
+      enabled: true
+      path: /graphiql
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
+server:
+  port: 8080

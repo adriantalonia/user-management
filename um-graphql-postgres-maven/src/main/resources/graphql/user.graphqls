@@ -13,3 +13,12 @@ input UserInput {
     password: String
     email: String
 }
+
+input SearchFilterInput {
+    field: StringFilterableField
+    values: [String]!
+}
+
+enum StringFilterableField {
+    FIRST_NAME
+}

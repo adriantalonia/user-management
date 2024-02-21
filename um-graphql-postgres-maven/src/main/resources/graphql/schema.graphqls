@@ -1,8 +1,9 @@
 type Query {
     getUser(id: ID!): User
-    searchUsers: [User]
+    searchUsers(input: SearchFilterInput): [User]
 }
 
 type Mutation {
     createUser(user: UserInput): User
+    updateUser(user: UserInput): User
 }

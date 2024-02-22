@@ -10,6 +10,11 @@
         <module name="um-graphql-postgres-maven" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="content" target="21" />
+      <module name="content.main" target="21" />
+      <module name="content.test" target="21" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

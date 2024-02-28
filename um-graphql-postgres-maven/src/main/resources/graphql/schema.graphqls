@@ -6,4 +6,5 @@ type Query {
 type Mutation {
     createUser(user: UserInput): User
     updateUser(user: UserInput): User
+    deleteUser(userId: String!): Boolean!
 }

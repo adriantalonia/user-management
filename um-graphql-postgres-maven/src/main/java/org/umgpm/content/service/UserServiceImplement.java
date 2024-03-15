@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import org.umgpm.content.model.entity.User;
 import org.umgpm.content.repository.UserRepository;
 
+import java.util.List;
 import java.util.UUID;
 
 @Slf4j
@@ -17,5 +18,10 @@ public class UserServiceImplement implements UserService {
     @Override
     public User getUserById(String id) {
         return userRepository.findById(UUID.fromString(id)).orElse(null);
+    }
+
+    @Override
+    public List<User> getUsers() {
+        return null;
     }
 }

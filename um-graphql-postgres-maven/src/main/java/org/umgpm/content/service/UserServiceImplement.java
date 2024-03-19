@@ -22,6 +22,7 @@ public class UserServiceImplement implements UserService {
 
     @Override
     public List<User> getUsers() {
+        log.info("");
         return null;
     }
 }
